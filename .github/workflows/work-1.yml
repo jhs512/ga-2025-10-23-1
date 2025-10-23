@@ -44,5 +44,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER_LC }}/deploy:${{ needs.makeTagAndRelease.outputs.tag_name }},
+            ghcr.io/${{ env.OWNER_LC }}/deploy:${{ needs.makeTag.outputs.tag_name }},
             ghcr.io/${{ env.OWNER_LC }}/deploy:latest
